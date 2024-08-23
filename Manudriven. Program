@@ -1,0 +1,36 @@
+#Manudriven program To remove the element on a specific index number from the list, To remove a particular element on the first occurrence and empty the list
+
+MAG = [33,66,75,98,98,75,73,75,88,88]
+while True:
+    print("Welcome")
+    print("Press 1 to remove element from specific index number \nPress 2 To remove a particular element on the first occurrence \nPress 3 To empty the list \nPress 4 to exit")
+    print(MAG)
+    cho = int(input("Enter Your Choice : "))
+
+    if cho == 1:
+        a = int(input("Enter The Index Number : "))
+        MAG.pop(a)
+        print(MAG)
+
+    elif cho == 2:
+        a = int(input("Enter The Elemnt : "))
+        for i in range (0,len(MAG)):
+            if a == MAG[i]:
+                MAG.pop(i)
+                break
+        print(MAG)
+
+    elif cho == 3:
+        MAG.clear()
+        print("List is now empty")
+        print(MAG)
+    
+    elif cho == 4:
+        print("Bye Bye")
+        break
+
+    else:
+        print("Wrong Choice")
+
+
+
